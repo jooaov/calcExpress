@@ -1,5 +1,10 @@
-resp=require("../routers/router");
-//resp.respostaDoCliente
-//console.log(resp.respostaDoCliente)
-//console.log("resp.respostaDoCliente")
-exports.valorResposta="vai karai"
+//resp=require("../routers/router");
+
+
+
+//eval()
+
+exports.calcularValor=function (valor) {
+    valor=eval(valor)
+    return valor
+}

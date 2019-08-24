@@ -3,10 +3,10 @@ function click() {
     document.getElementById("calculo").innerText=document.getElementById("calculo").innerText+this.innerText;
 }
 
-function click2() {
-    console.log(this.getAttribute("value"))
-    document.getElementById("calculo").innerText=document.getElementById("calculo").innerText+this.getAttribute("value");
-}
+//function click2() {
+//    console.log(this.getAttribute("value"))
+//    document.getElementById("calculo").innerText=document.getElementById("calculo").innerText+this.getAttribute("value");
+//}
 
 function igual() {
     $.ajax({
@@ -15,22 +15,14 @@ function igual() {
     }).done(function () {
         alert('enviou req para o server')
         window.location.href="http://localhost:4000/redirect"
-        //console.log("data")
     })
 }
 
-//function checarResposta() {
- //   if(resposta){
-   //     document.getElementById("resposta").innerText=resposta;
-    //}
-    //else{
-      //  document.getElementById("resposta").innerText=null;
-    //}
-//}
+
 
 $(function () {
     $("button").click(click);
-    $("input").click(click2);
+    //$("input").click(click2);
     $("#igual").click(igual);
     //$(document).ready(checarResposta)
 })
